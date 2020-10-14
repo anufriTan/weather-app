@@ -31,7 +31,7 @@ class App extends React.Component {
         };
         this.setState({ location: currentLocation });
 
-        const URL = `http://api.openweathermap.org/data/2.5/weather?lat=${this.state.location.latitude}&lon=${this.state.location.longitude}&appid=${API_KEY}&units=metric&lang=ru`;
+        const URL = `https://api.openweathermap.org/data/2.5/weather?lat=${this.state.location.latitude}&lon=${this.state.location.longitude}&appid=${API_KEY}&units=metric&lang=ru`;
         fetch(URL).then((res) => {
           return res.json();
         })
@@ -80,7 +80,7 @@ class App extends React.Component {
   findWeather = (event) => {
     event.preventDefault();
     const city = event.target.elements.city.value;
-    const URL = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric&lang=ru`;
+    const URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric&lang=ru`;
     fetch(URL)
       .then((res) => {
         return res.json();
