@@ -11,8 +11,7 @@ class App extends React.Component {
       latitude: null,
       longitude: null,
     },
-    currentData: {},
-    searchData: " "
+    currentData: {},   
   };
 
   componentDidMount() {

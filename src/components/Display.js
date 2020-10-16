@@ -6,7 +6,7 @@ function Display(props) {
   if (!props.data.temp && !props.data.error) return <div className="display__error">Загружаем погоду...</div>;
   if (props.data.error) return <div className="display__error display__error_text">{props.data.error}</div>;
 
-  const iconUrl = "http://openweathermap.org/img/wn/" + props.data.icon + "@2x.png";
+  const iconUrl = "https://openweathermap.org/img/wn/" + props.data.icon + "@2x.png";
   const date = new Date();
   const displayDate = `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`
   const daysNames = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'];
