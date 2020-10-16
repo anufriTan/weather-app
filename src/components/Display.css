@@ -124,7 +124,7 @@
    object-fit: contain;
 }
 
-@media screen and (max-height: 730px) {
+@media screen and (max-width: 490px) and (max-height: 730px) {
     .display__image {
         width: 100px; 
         height: 100px;             
@@ -148,19 +148,18 @@
     }
 }
 
-@media screen and (max-width: 490px) {
-    .display__weather-container {
-        margin-right: 0;              
-    }
-}    
-
-@media screen and (max-height: 730px) {
+@media screen and (max-width: 550px) and (max-height: 730px) {
     .display__weather-container {
         font-size: 16px;
         line-height: 18px;                    
     }
 }
 
+@media screen and (max-width: 490px) {
+    .display__weather-container {
+        margin-right: 0;              
+    }
+}    
 
 .display__description {
     margin: 0;
